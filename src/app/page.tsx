@@ -1,14 +1,11 @@
-import { Button, Flex } from 'antd';
+import { UserButton } from '@clerk/nextjs';
 
 // 3. Ant-D Installation
+// 7. Auth Components
 export default function Home() {
   return (
-    <Flex gap='small' wrap>
-      <Button type='primary'>Primary Button</Button>
-      <Button>Default Button</Button>
-      <Button type='dashed'>Dashed Button</Button>
-      <Button type='text'>Text Button</Button>
-      <Button type='link'>Link Button</Button>
-    </Flex>
+    <div>
+      <UserButton />
+    </div>
   );
 }
